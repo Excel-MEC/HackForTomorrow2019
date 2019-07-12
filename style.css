@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
 }
 
+
 #nav{
     height: 5em;
     width: 100%;   
@@ -30,6 +31,7 @@ body{
 }
 #nav li a:hover{
     cursor: pointer;
+    color: #F16A3A;
 }
 
 .blackNav{
@@ -38,8 +40,9 @@ body{
     top: 0;
     width: 43%;
     height: 5em;
-    background-color: #333;
+    background-color: rgb(29, 29, 29);
     transform: skewX(-20deg);
+    padding-left: 3vw; 
 }
 
 .blackNav img {
@@ -125,6 +128,7 @@ body{
     bottom: 6.5em;
     height: 6.5em;
     width: 47%;
+    height: 17%;
     transform: skewX(-20deg);
     display: grid;
     grid-template-columns: auto auto auto;
@@ -134,8 +138,8 @@ body{
 
 .blackTag img{
     transform: skewX(20deg);
-    height: 3.5em;
-    width: 9.5vw;
+    height: 5vw;
+    width: auto;
     justify-self: center;
     align-self: center;
     cursor: pointer;
@@ -188,8 +192,9 @@ body{
 .content button{
     margin-top: 1.7em;
     font-size: 1.4vw;
+    font-weight: 500;
     height: 3em;
-    width: 17vw;
+    width: 15em;
     color: white;
     background: none;
     border: 3px solid white;
@@ -197,6 +202,8 @@ body{
 }
 .content button:hover{
     cursor: pointer;
+    color:orange;
+    background: white;
 }
 
 .content button[disabled] {
@@ -232,7 +239,7 @@ body{
     display: grid;
     text-align: center
 }
-.midImagecontent i{
+#midImagecontentI{
     font-size: 7vw;
     justify-self: center;
     align-self: center;
@@ -247,7 +254,7 @@ body{
     display: grid;
 }
 #imageline2{
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: 500;
 }
 
@@ -263,7 +270,7 @@ body{
     font-size: 2vw;
     display: grid;
 }
-#midAddresscontent i{
+#midAddresscontentI{
     font-size: 7vw;
     align-self: center;
     justify-self: center;
@@ -662,16 +669,17 @@ body{
 }
 .contactDiv .person {
     display: inline-block;
-    width: 25%;
-    margin: 2em 3em;
-    padding: 2.5vw;
+    width: 20%;
+    margin: 3em 5em;
+    
+    
+    /* padding: 1.5em; */
     /* border-radius: 5px;
     border: 1px solid lightgrey;
     text-align: center;      */
 }
 .contactDiv .person .photo {
-    /* width: 200px;
-    height: 200px; */
+    width: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -682,8 +690,6 @@ body{
     width: 100%;
 }
 .contactDiv .person .text {
-    margin-left: auto;
-    margin-right: auto;
     text-align: left;
     font-size: 1.2em;
     padding-top: 1em;
@@ -691,7 +697,10 @@ body{
     text-overflow: ellipsis;
 }
 .contactDiv .person .text a {
-    color: #3f9c3f;
+    font-size: 1em;
+}
+.contactDiv .person .text a:hover {
+    color: #F16A3A;
     font-size: 1em;
 }
 .contactDiv .person .text span {
@@ -817,9 +826,19 @@ body{
 
     /* Mid Container */
     .midContainer{
-        margin-bottom: 1em;
+        width: 100%;
+        height: auto;
+        display: grid;
+        margin-bottom: 4em;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 
+            "box1"
+            "box2"
+            "box3";
     }
     .midContent{
+        grid-area: box1;
         padding: 4px 1.5em;
         font-size: 19px;
         display: grid;
@@ -829,17 +848,69 @@ body{
         justify-self: center;
     }
 
+    .midImage{
+        grid-area: box2;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "pic txt";
+        margin: 3em 1em;
+    }
+    #midImagecontent{
+        font-size: 1.6em;
+        text-align: left; 
+        grid-area: txt;  
+        padding-right: 1.6em;
+    }
+    #midImagecontentI{
+        padding-left: 1.2em;
+        grid-area: pic; 
+        font-size: 5em;
+        color: #F16A3A;
+        vertical-align: middle; 
+    }
+    .midAddress{
+        grid-area: box3;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "txt pic";
+            margin: 2em 1em;     
+    }
+    #midAddresscontentI{
+        padding-right: 1.2em;
+        grid-area: pic; 
+        font-size: 5em;
+        color: #F16A3A;
+        vertical-align: middle; 
+    }
+    
+    #midAddresscontent{
+        padding-left: 1.6em;
+        font-size: 1.6em;
+        text-align: right; 
+        line-height: normal; 
+    }
+
+
+
     /* Details Div */
     .details{
         padding: 1em 0 2em 1em;
     }
     .details li{
-        font-size: 13px;
+        font-size: 3.8vw;
     }
     .details h1{
-        font-size: 9vw;
+        font-size: 8vw;
+        font-weight: bold;
+        padding-bottom: 2vw;
     }
-    .detailImage i{
+    .ltext{
+        font-size: 4vw;
+        color: white;
+    }
+    .detailImage{
         /* left: -1em; */
         display: none;
     }
@@ -857,6 +928,8 @@ body{
     }
     .bottomHead h1{
         font-size: 8vw;
+        font-weight: bold;
+        padding-bottom: 4vw;
     }
     .bottomImage{
         margin-top: 2em;
@@ -873,7 +946,8 @@ body{
     }
     .bottomContent{
         height: auto;
-        padding: 2em 2em;
+        padding-top: 3em;
+        padding-bottom: 6em;   
         /* background-color: tomato; */
     }
     .bottomContent div img{
@@ -909,8 +983,33 @@ body{
     }
 
     .contactDiv .person {
-        width: 50%;
-        margin-bottom: 2em;
+        width: 100%;
+        margin: 1.4em 1.6em;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .contactDiv .person .text{
+        
+        padding: 0%;
+        margin: 0%;
+        margin-left: 1.2em;
+        margin-bottom: 0.8em;
+        display: inline-block;
+        font-size: 3.5vw;   
+    }
+
+    .contactDiv .person .photo{
+        display: inline-block;
+        /* float: left; */
+        width: 30%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0%;
+    }
+    .contactDiv h1{
+        margin-top: 1em;
+        margin-bottom: 0.5em;
     }
 
 
