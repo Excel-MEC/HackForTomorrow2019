@@ -715,7 +715,7 @@ body{
     }
 
     .blackNav img {
-        height: 1.3em;
+        height: 2.5em;
         transform: none;
         left: 0;
         top: 30%;
@@ -723,8 +723,13 @@ body{
     
     /* NavBar */
     #nav ul{
-        background-color: white;
-        margin: 0;
+        /* background-color: tomato; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #nav{
+        height: auto;
     }
 
     #nav li a{
