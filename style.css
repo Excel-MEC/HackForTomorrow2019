@@ -400,16 +400,16 @@ body{
 /* Prize Div */
 .prizeDiv{
     width: 100%;
-    height: 110vh;
-    display: grid;
+    height: 20vh;
+    /* display: grid; */
     color: white;
     background-color: #F16A3A;
-    padding-bottom: 1em;
-    grid-template-rows: 1.2fr 5fr;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: 
+    /* padding-bottom: 1em; */
+    /* grid-template-rows: 1.2fr 5fr; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-areas: 
         "prizeHead prizeHead prizeHead"
-        "second first third";
+        "second first third"; */
 }
 
 .prizeHead{
@@ -541,8 +541,9 @@ body{
     width: 100vw;
     background-color: #F16A3A;
     padding: 2em;
-
     color: white;
+    padding-left: 7vw;
+    padding-bottom: 4vw;
 }
 .prizeDetails li{
     padding: 0.3vw;
@@ -841,12 +842,12 @@ body{
     /* Bottom Div */
     .bottomDiv{
         margin-top: 2em;
-        grid-template-rows: 0.1fr 0.8fr 2fr;
+        grid-template-rows: auto auto auto;
         grid-template-columns: auto;
         grid-template-areas: 
             "head"
             "image"
-            "content"
+            "content";
     }
     .bottomHead h1{
         font-size: 8vw;
@@ -855,9 +856,14 @@ body{
         margin-top: 2em;
         padding: 0 2em;
         /* background-color: green; */
+        margin-bottom: 1em;
     }
     .bottomImage div {
         padding: 0;
+        /* background-color: #333; */
+    }
+    .bottomImage div img{
+        width: 65vw;
     }
     .bottomContent{
         height: auto;
@@ -867,14 +873,14 @@ body{
     .bottomContent div img{
         width: 50vw;
         height: 20vh
-
     }
 
 
     /* PrizeDiv */
     .prizeDiv{
-        height: auto;
-        grid-template-rows: auto auto auto;
+        margin-top: -3em;
+        height: 10vh;
+        /* grid-template-rows: auto auto auto; */
     }
     .prizeHead{
         margin-bottom: 7em;
@@ -904,7 +910,7 @@ body{
 
     /* Prize Details */
     .prizeDetails li{
-        font-size: 2.7vw;
+        font-size: 1.2em;
     }
 
 
