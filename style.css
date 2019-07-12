@@ -90,9 +90,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(assets/title-sponsor-paytm.png); */
+    background-image: url(assets/2019/visualiq.png);
     background-repeat: no-repeat;
-    background-size: 64%;
+    background-size: 80%;
     background-position: center;
 }
 
@@ -122,7 +122,7 @@ body{
     background-color: rgb(29, 29, 29);
     position: absolute;
     right: -1em;
-    bottom: 5em;
+    bottom: 6.5em;
     height: 6.5em;
     width: 47%;
     transform: skewX(-20deg);
@@ -270,7 +270,7 @@ body{
     color: #F16A3A;
 }
 #line2{
-    color: #1b5e20;
+    color: #F16A3A;
 }
 
 
