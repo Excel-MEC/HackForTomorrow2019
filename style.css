@@ -90,9 +90,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(assets/title-sponsor-paytm.png); */
+    background-image: url(assets/2019/visualiq.png);
     background-repeat: no-repeat;
-    background-size: 64%;
+    background-size: 80%;
     background-position: center;
 }
 
@@ -122,7 +122,7 @@ body{
     background-color: rgb(29, 29, 29);
     position: absolute;
     right: -1em;
-    bottom: 5em;
+    bottom: 6.5em;
     height: 6.5em;
     width: 47%;
     transform: skewX(-20deg);
@@ -270,7 +270,7 @@ body{
     color: #F16A3A;
 }
 #line2{
-    color: #1b5e20;
+    color: #F16A3A;
 }
 
 
@@ -308,6 +308,8 @@ body{
 
 .detailImage{
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .detailImage i{
@@ -333,9 +335,7 @@ body{
     grid-template-columns: 50% 50%;
     grid-template-areas: 
         "head head"
-        "image content"
-        "logo1 logo2"
-        "logo3 logo3";
+        "image content";
     margin-top: 3em;
 }
 
@@ -346,7 +346,7 @@ body{
 }
 .bottomHead h1{
     justify-self: center;
-    color: #00695c;
+    color: #333;
 }
 
 .bottomImage{
@@ -369,11 +369,20 @@ body{
 .bottomContent{
     /* background-color: #333; */
     grid-area: content;
-    padding: 3em;
-    font-size: 1.6em;
-    line-height: 1.6;
+    padding-top: 1em;
+    display: grid;
 }
 
+.bottomContent div{
+    justify-self: center;
+    line-height: 1px;
+    /*  padding-left: 7em; */
+    /* padding-bottom: 8em; */
+}
+
+.bottomContent div img{
+    width: 30vw;
+}
 
 
 
@@ -390,7 +399,7 @@ body{
     height: 110vh;
     display: grid;
     color: white;
-    background-color: #59b76e;
+    background-color: #F16A3A;
     padding-bottom: 1em;
     grid-template-rows: 1.2fr 5fr;
     grid-template-columns: auto auto auto;
@@ -522,7 +531,15 @@ body{
 
 
 
+/* Prize Details */
+.prizeDetails{
+    height: auto;
+    width: 100vw;
+    background-color: #F16A3A;
+    padding: 2em;
 
+    color: white;
+}
 
 
 
@@ -554,12 +571,13 @@ body{
     display: grid;
 }
 .logo img{
+    width: 15vw;
     justify-self: center;
     align-self: center;
 }
 .logo div{
     justify-self: center;
-    margin: -2em;
+    margin: -1em;
 }
 .logo div a{
     color: white;
