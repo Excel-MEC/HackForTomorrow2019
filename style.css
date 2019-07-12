@@ -335,9 +335,7 @@ body{
     grid-template-columns: 50% 50%;
     grid-template-areas: 
         "head head"
-        "image content"
-        "logo1 logo2"
-        "logo3 logo3";
+        "image content";
     margin-top: 3em;
 }
 
@@ -348,7 +346,7 @@ body{
 }
 .bottomHead h1{
     justify-self: center;
-    color: #00695c;
+    color: #333;
 }
 
 .bottomImage{
@@ -371,11 +369,20 @@ body{
 .bottomContent{
     /* background-color: #333; */
     grid-area: content;
-    padding: 3em;
-    font-size: 1.6em;
-    line-height: 1.6;
+    padding-top: 1em;
+    display: grid;
 }
 
+.bottomContent div{
+    justify-self: center;
+    line-height: 1px;
+    /*  padding-left: 7em; */
+    /* padding-bottom: 8em; */
+}
+
+.bottomContent div img{
+    width: 30vw;
+}
 
 
 
