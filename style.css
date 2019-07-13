@@ -226,7 +226,7 @@ body{
     width: 100%;
     height: auto;
     display: grid;
-    margin-bottom: 7em;
+    margin-bottom: 8em;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     grid-template-areas: 
@@ -241,6 +241,11 @@ body{
     line-height: 1.4em;
     font-size: 35px;
     color: #333;
+}
+.midContent p{
+    
+    font-size: 0.8em;
+    line-height: 130%;
 }
 
 .midImage{
@@ -260,11 +265,11 @@ body{
     align-self: center;
     justify-self: center;
     line-height: 1.5em;
-    font-size: 2vw;
+    font-size: 2.2em;
     display: grid;
 }
 #imageline2{
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 500;
 }
 
@@ -747,6 +752,7 @@ body{
 
     .logosContainer {
         display: block;
+        justify-content: space-between;
         background-color: rgb(25,25,25);
         padding: 1em 0;
         text-align: center;
@@ -809,6 +815,10 @@ body{
         height: 100%;
         width: 100%;
     }
+    .topContainer h1{
+        /* font-size: 10vw; */
+        line-height: 0
+    }
 
     .whiteCircle{
         /* height: 25%;
@@ -865,22 +875,29 @@ body{
         width: 100%;
         height: auto;
         display: grid;
-        margin-bottom: 4em;
+        padding: 2em 2em 4em 2em;
         grid-template-rows: auto;
         grid-template-columns: auto auto auto auto;
         grid-template-areas:
             "box1"
             "box2"
             "box3";
+        margin: 0;
     }
 
     .midContent{
-        margin: 2em em;    
+        padding: 0;
         grid-area: box1;
-        padding: 4px 1.5em;
         font-size: 19px;
         display: grid;
     }
+
+    .midContent h1{
+        
+        font-size: 8vw;
+        font-weight: bold;
+    }
+
     .midContent p{
         align-self: center;
         justify-self: center;
@@ -894,7 +911,6 @@ body{
             "pic txt";
         margin-top: 2em;
         margin-bottom: 2em;
-        margin-left: 0%;
         justify-content: left;
     }
     #midImagecontent{
@@ -910,14 +926,13 @@ body{
         
         position: relative;
         float:left;
-        padding-left: 1.2em;
-        padding-right: 0.4em;
         grid-area: pic; 
-        font-size: 4.0em;
+        font-size: 12vw;
         color: #F16A3A;
         vertical-align: middle; 
-        
-        margin-left: auto;
+        margin: 0;
+        margin-left: 12vw;
+        margin-right: 4vw;
     }
     .midAddress{
         grid-area: box3;
@@ -925,22 +940,19 @@ body{
         grid-template-columns: auto;
         grid-template-areas: 
             "pic txt";
-        margin-top: 1em;
-        margin-bottom: 2em;
-        margin-left: 0%;
-        justify-content: left;   
+        justify-content: left;  
     }
     #midAddresscontentI{
         position: relative;
         float:left;
-        padding-left: 1.3em;
-        padding-right: 0.4em;
+        /* padding: 0.1em; */
         grid-area: pic; 
-        font-size: 4.0em;
+        font-size: 12vw;
         color: #F16A3A;
-        vertical-align: middle;  
-
-        margin-left: auto;
+        vertical-align: middle; 
+        margin: 0;
+        margin-left: 12vw;
+        margin-right: 6vw;
     }
     
     #midAddresscontent{
@@ -957,7 +969,7 @@ body{
 
     /* Details Div */
     .details{
-        padding: 1em 0 2em 1em;
+        padding: 2em 2em 4em 2em;
     }
     .details li{
         font-size: 3.8vw;
@@ -972,8 +984,7 @@ body{
         color: white;
     }
     .ltext2{
-        font-size: 4vw;
-        padding-right: 1em;
+        font-size: 3.6vw;
         color: white;
         margin-right: auto;
         margin-left: auto;
