@@ -676,7 +676,11 @@ body{
 .contactDiv h1 {
     margin: 1em 0;
 }
+.contactBody{
+    justify-content: space-between; 
+}
 .contactDiv .person {
+    vertical-align: top;
     display: inline-block;
     width: 20%;
     margin: 3em 5em;
@@ -691,17 +695,19 @@ body{
     width: 100%;
     position: relative;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 5%;
     margin-left: auto;
     margin-right: auto;
 }
 .contactDiv .person .photo img {
-    width: 100%;
+    width: 100%; 
 }
 .contactDiv .person .text {
+    position: relative;
+    float: initial;
     text-align: left;
-    font-size: 1.2em;
-    padding-top: 1em;
+    font-size: 1.1em;
+    padding-top: 1.2em;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -778,7 +784,7 @@ body{
 
     /* Top Container */
     .topContainer{
-        height: auto;
+        height: min-content;
     }
     .topContainer img{
         height: 100%;
