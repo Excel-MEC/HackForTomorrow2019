@@ -1076,6 +1076,9 @@ body h1{
         margin: 0;
         margin-top: 1em;
     }
+    .contactDiv h1{
+        font-size: 8vw;
+    }
 
     .contactDiv .person {
         width: 100%;
