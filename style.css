@@ -1,24 +1,24 @@
-html{
+html {
     overflow-x: hidden;
     height: 100%;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-body h1{
+
+body h1 {
     font-weight: 600;
 }
 
-
-
-#nav{
+#nav {
     height: 5em;
-    width: 100%;   
+    width: 100%;
 }
 
-#nav ul{
+#nav ul {
     list-style-type: none;
     margin: 0 2em;
     padding: 0;
@@ -26,11 +26,11 @@ body h1{
     float: right;
 }
 
-#nav li{
+#nav li {
     float: left;
 }
 
-#nav li a{
+#nav li a {
     font-size: 1.1vw;
     display: block;
     text-align: center;
@@ -38,12 +38,13 @@ body h1{
     text-decoration: none;
     color: #333;
 }
-#nav li a:hover{
+
+#nav li a:hover {
     cursor: pointer;
     color: #F16A3A;
 }
 
-.blackNav{
+.blackNav {
     position: absolute;
     left: -1em;
     top: 0;
@@ -54,7 +55,7 @@ body h1{
 }
 
 .blackNav img {
-    margin-left: 3vw; 
+    margin-left: 3vw;
     transform: skewX(20deg);
     position: relative;
     left: 13%;
@@ -63,11 +64,9 @@ body h1{
 }
 
 
-
-
-
 /* TopContainer */
-.topContainer{
+
+.topContainer {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -75,7 +74,7 @@ body h1{
     background-size: 100% 100%;
 }
 
-.topContainer img{
+.topContainer img {
     position: absolute;
     height: 42em;
     width: 100%;
@@ -83,14 +82,18 @@ body h1{
 }
 
 .topContainer .content pre {
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;  
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
 }
 
-.whiteCircle{
+.whiteCircle {
     position: absolute;
     top: 10em;
     right: 9em;
@@ -101,7 +104,7 @@ body h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/2019/visualiq.png);
+    background-image: url(assets/2019/litmus7.png);
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
@@ -111,11 +114,11 @@ body h1{
     .whiteCircle {
         width: 10em;
         height: 10em;
-        top: 5em;
+        top: 10em;
     }
 }
 
-.whiteCircle div{
+.whiteCircle div {
     /* background-color: tomato; */
     width: 15vw;
     height: 15vw;
@@ -125,11 +128,12 @@ body h1{
     font-size: 3em;
     color: #333
 }
-.whiteCircle div h1{
+
+.whiteCircle div h1 {
     font-size: 7vw;
 }
 
-.blackTag{
+.blackTag {
     background-color: rgb(29, 29, 29);
     position: absolute;
     right: -1em;
@@ -140,11 +144,10 @@ body h1{
     transform: skewX(-20deg);
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-areas: 
-        "mec1 ibeto2 excel3"
+    grid-template-areas: "mec1 ibeto2 excel3"
 }
 
-.blackTag img{
+.blackTag img {
     transform: skewX(20deg);
     height: 5vw;
     width: auto;
@@ -152,23 +155,26 @@ body h1{
     align-self: center;
     cursor: pointer;
 }
-#excel{
+
+#excel {
     grid-area: excel3;
     justify-self: start;
     height: 6vw;
     width: 8.2vw;
 }
-#ibeto{
-   grid-area: ibeto2;
-   height: 5vw;
-   width: 7vw;
+
+#ibeto {
+    grid-area: ibeto2;
+    height: 5vw;
+    width: 7vw;
 }
-#mec{
+
+#mec {
     grid-area: mec1;
     justify-self: end;
 }
 
-.content{
+.content {
     position: absolute;
     top: 4em;
     left: 6em;
@@ -179,30 +185,30 @@ body h1{
     padding: 5em 1em;
 }
 
-.content h1{
+.content h1 {
     line-height: 0.7em;
     font-size: 4vw;
     margin-top: 15px;
     font-weight: bold;
 }
 
-.content p{
+.content p {
     margin-top: 3em;
     line-height: 1.5em;
-    font-size: 1.6vw; 
+    font-size: 1.6vw;
 }
 
-.ltext{
+.ltext {
     font-size: 2.5vw;
     color: white;
 }
 
-.ltext2{
+.ltext2 {
     font-size: 2vw;
     color: white;
 }
 
-.content button{
+.content button {
     margin-top: 1.7em;
     font-size: 1.4vw;
     font-weight: 500;
@@ -213,9 +219,10 @@ body h1{
     border: 3px solid white;
     border-radius: 7px;
 }
-.content button:hover{
+
+.content button:hover {
     cursor: pointer;
-    color:orange;
+    color: orange;
     background: white;
 }
 
@@ -225,19 +232,18 @@ body h1{
 
 
 /* MID Container */
-.midContainer{
+
+.midContainer {
     width: 100%;
     height: auto;
     display: grid;
     margin-bottom: 8em;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
-    grid-template-areas: 
-        "box1 box1"
-        "box2 box3";
+    grid-template-areas: "box1 box1" "box2 box3";
 }
 
-.midContent{
+.midContent {
     /* background-color: tomato; */
     grid-area: box1;
     padding: 2em 5em;
@@ -245,95 +251,99 @@ body h1{
     font-size: 35px;
     color: #333;
 }
-.midContent p{
-    
+
+.midContent p {
     font-size: 2vw;
     line-height: 130%;
 }
 
-.midImage{
+.midImage {
     /* background-color: teal; */
     grid-area: box2;
     display: grid;
     text-align: center
 }
-#midImagecontentI{
+
+#midImagecontentI {
     font-size: 7vw;
     justify-self: center;
     align-self: center;
     margin-bottom: 0.2em;
     color: #F16A3A;
 }
-#midImagecontent{
+
+#midImagecontent {
     align-self: center;
     justify-self: center;
     line-height: 1.5em;
     font-size: 2.2em;
     display: grid;
 }
-#imageline2{
+
+#imageline2 {
     font-size: 4vw;
     font-weight: 500;
 }
 
-.midAddress{
+.midAddress {
     /* background-color: #333; */
     grid-area: box3;
     display: grid;
 }
-#midAddresscontent{
+
+#midAddresscontent {
     align-self: center;
     justify-self: center;
     line-height: 1.5em;
     font-size: 2vw;
     display: grid;
 }
-#midAddresscontentI{
+
+#midAddresscontentI {
     font-size: 7vw;
     align-self: center;
     justify-self: center;
     margin-bottom: 0.2em;
     color: #F16A3A;
 }
-#line2{
+
+#line2 {
     color: #F16A3A;
 }
 
 
-
-
-
-
-
 /* Details DIV */
-.detailsDiv{
+
+.detailsDiv {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: auto auto;
     /* background-color: rgb(255, 116, 61); */
-    background-image: linear-gradient(to bottom right, rgb(233, 77, 4),rgb(255, 139, 61))
+    background-image: linear-gradient(to bottom right, rgb(233, 77, 4), rgb(255, 139, 61))
 }
 
-.details{
+.details {
     padding: 3em 0 5em 3em;
     color: white;
     padding-left: 3em;
 }
-.details h1{
+
+.details h1 {
     font-size: 5vw;
 }
-.details li{
+
+.details li {
     line-height: 1em;
     padding: 0.7em;
     font-size: 25px;
 }
 
-.details li i{
+.details li i {
     margin-right: 10px;
 }
 
-.detailImage{
+.detailImage {
     position: relative;
     float: right;
     margin-right: 3.5em;
@@ -342,13 +352,14 @@ body h1{
     text-align: right;
 }
 
-.detailImage img{
+.detailImage img {
     position: relative;
     float: right;
     width: 25em;
     height: 25em;
     text-align: right;
 }
+
 
 /* .detailImage i{
     font-size: 20vw;
@@ -360,80 +371,70 @@ body h1{
 } */
 
 
-
-
-
-
-
 /* Bottom Div */
-.bottomDiv{
+
+.bottomDiv {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-rows: 0.8fr 3fr;
     grid-template-columns: 50% 50%;
-    grid-template-areas: 
-        "head head"
-        "image content";
+    grid-template-areas: "head head" "image content";
     margin-top: 3em;
 }
 
-.bottomHead{
+.bottomHead {
     /* background-color: tomato; */
     grid-area: head;
     display: grid;
 }
-.bottomHead h1{
+
+.bottomHead h1 {
     justify-self: center;
     color: #333;
 }
 
-.bottomImage{
+.bottomImage {
     /* background-color: teal; */
     grid-area: image;
     display: grid;
     padding-top: 5em;
 }
-.bottomImage h3{
+
+.bottomImage h3 {
     color: gray;
     line-height: 1;
 }
-.bottomImage div{
+
+.bottomImage div {
     justify-self: center;
     line-height: 1px;
     padding-left: 7em;
     padding-bottom: 8em;
 }
 
-.bottomContent{
+.bottomContent {
     /* background-color: #333; */
     grid-area: content;
     padding-top: 1em;
     display: grid;
 }
 
-.bottomContent div{
+.bottomContent div {
     justify-self: center;
     line-height: 1px;
     /*  padding-left: 7em; */
     /* padding-bottom: 8em; */
 }
 
-.bottomContent div img{
+.bottomContent div img {
     width: 30vw;
 }
 
 
-
-
-
-
-
-
-
-
 /* Prize Div */
-.prizeDiv{
+
+.prizeDiv {
     width: 100%;
     height: 20vh;
     /* display: grid; */
@@ -447,23 +448,25 @@ body h1{
         "second first third"; */
 }
 
-.prizeHead{
+.prizeHead {
     grid-area: prizeHead;
     /* background-color: tomato; */
     position: relative;
 }
-.prizeHead h1{
+
+.prizeHead h1 {
     justify-self: flex-start;
     position: absolute;
     left: 1.5em;
 }
 
-.second{
+.second {
     grid-area: second;
     /* background-color: teal; */
     display: grid;
 }
-.secondBox{
+
+.secondBox {
     background: none;
     border: 5px solid white;
     border-radius: 7px;
@@ -474,13 +477,15 @@ body h1{
     position: relative;
     display: grid;
 }
-.secondBox .trophy{
+
+.secondBox .trophy {
     font-size: 9vw;
     justify-self: center;
     position: absolute;
     top: 0.6em;
 }
-.secondBox div{
+
+.secondBox div {
     justify-self: center;
     align-self: center;
     font-size: 3vw;
@@ -489,18 +494,18 @@ body h1{
     display: grid;
     margin-top: 5em;
 }
-.secondBox div span{
+
+.secondBox div span {
     justify-self: center;
 }
 
-
-
-.first{
+.first {
     grid-area: first;
     /* background-color: yellow; */
     display: grid;
 }
-.firstBox{
+
+.firstBox {
     background: none;
     border: 5px solid white;
     border-radius: 7px;
@@ -511,13 +516,15 @@ body h1{
     display: grid;
     position: relative;
 }
-.firstBox .trophy{
+
+.firstBox .trophy {
     font-size: 13vw;
     justify-self: center;
     position: absolute;
     top: 0.5em;
 }
-.firstBox div{
+
+.firstBox div {
     justify-self: center;
     align-self: center;
     font-size: 4vw;
@@ -526,18 +533,18 @@ body h1{
     display: grid;
     margin-top: 5em;
 }
-.firstBox div span{
+
+.firstBox div span {
     justify-self: center;
 }
 
-
-
-.third{
+.third {
     grid-area: third;
     /* background-color: #333; */
     display: grid;
 }
-.thirdBox{
+
+.thirdBox {
     background: none;
     border: 5px solid white;
     border-radius: 7px;
@@ -548,13 +555,15 @@ body h1{
     position: relative;
     display: grid;
 }
-.thirdBox .trophy{
+
+.thirdBox .trophy {
     font-size: 9vw;
     justify-self: center;
     position: absolute;
     top: 0.6em;
 }
-.thirdBox div{
+
+.thirdBox div {
     justify-self: center;
     align-self: center;
     font-size: 3vw;
@@ -563,15 +572,15 @@ body h1{
     display: grid;
     margin-top: 5em;
 }
-.thirdBox div span{
+
+.thirdBox div span {
     justify-self: center;
 }
 
 
-
-
 /* Prize Details */
-.prizeDetails{
+
+.prizeDetails {
     height: auto;
     width: 100vw;
     background-color: #F16A3A;
@@ -580,17 +589,16 @@ body h1{
     padding-left: 7vw;
     padding-bottom: 4vw;
 }
-.prizeDetails li{
+
+.prizeDetails li {
     padding: 0.5vw;
     font-size: 2vw;
 }
 
 
-
-
-
 /* FooterDiv */
-.footerDiv{
+
+.footerDiv {
     width: 100%;
     height: 50vh;
     padding-top: 2em;
@@ -598,89 +606,86 @@ body h1{
     display: grid;
     grid-template-rows: 3fr 1fr;
     grid-template-columns: 4fr 2fr 2fr;
-    grid-template-areas: 
-        "logo ibeto excel"
-        "brand brand brand";
+    grid-template-areas: "logo ibeto excel" "brand brand brand";
 }
 
 .footerDiv a {
     color: white;
 }
 
-
-.logo{
+.logo {
     grid-area: logo;
     /* background-color: tomato; */
     color: white;
     display: grid;
 }
-.logo img{
+
+.logo img {
     width: 15vw;
     justify-self: center;
     align-self: center;
 }
-.logo div{
+
+.logo div {
     justify-self: center;
     margin: -1em;
 }
-.logo div a{
+
+.logo div a {
     color: white;
     font-size: 22px;
     padding: 0 1em;
 }
-.logo div a:hover{
+
+.logo div a:hover {
     cursor: pointer;
 }
 
-
-
-
-.footerIbeto{
+.footerIbeto {
     grid-area: ibeto;
     /* background-color: teal; */
     display: grid;
 }
-.footerIbeto img{
+
+.footerIbeto img {
     justify-self: center;
     align-self: center;
     height: 5em;
     cursor: pointer;
 }
-.footerIbeto div{
+
+.footerIbeto div {
     justify-self: center;
     color: white;
     margin-top: -1em;
 }
 
-
-
-
-.footerExcel{
+.footerExcel {
     grid-area: excel;
     /* background-color: #333; */
     display: grid;
 }
-.footerExcel img{
+
+.footerExcel img {
     justify-self: center;
     align-self: center;
     height: 5em;
     cursor: pointer;
 }
-.footerExcel div{
+
+.footerExcel div {
     justify-self: center;
     color: white;
     margin-top: -1em;
 }
 
-
-
-
-.Excelbrand{
+.Excelbrand {
     grid-area: brand;
     /* background-color: brown; */
     display: grid;
 }
-.Excelbrand span{
+
+.Excelbrand span {
     align-self: center;
     justify-self: center;
     color: white;
@@ -690,24 +695,26 @@ body h1{
     text-align: center;
     padding-bottom: 4em;
 }
+
 .contactDiv h1 {
     margin: 1em 0;
 }
-.contactBody{
-    justify-content: space-between; 
+
+.contactBody {
+    justify-content: space-between;
 }
+
 .contactDiv .person {
     vertical-align: top;
     display: inline-block;
     width: 20%;
     margin: 3em 5em;
-    
-    
     /* padding: 1.5em; */
     /* border-radius: 5px;
     border: 1px solid lightgrey;
     text-align: center;      */
 }
+
 .contactDiv .person .photo {
     width: 100%;
     position: relative;
@@ -716,9 +723,11 @@ body h1{
     margin-left: auto;
     margin-right: auto;
 }
+
 .contactDiv .person .photo img {
-    width: 100%; 
+    width: 100%;
 }
+
 .contactDiv .person .text {
     position: relative;
     float: initial;
@@ -728,35 +737,44 @@ body h1{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .contactDiv .person .text a {
     font-size: 1em;
 }
+
 .contactDiv .person .text a:hover {
     color: #F16A3A;
     font-size: 1em;
 }
+
 .contactDiv .person .text span {
     font-size: 1.2em;
 }
-
 
 .logosContainer {
     display: none;
 }
 
-.contactDiv .person .text i{
+.contactDiv .person .text i {
     transform: scaleX(-1);
 }
 
+.titlesp {
+    margin: 20px auto 40px auto;
+    width: 25vw;
+}
 
 
 /* Responsive - Mobile View */
-@media(max-width: 768px){
 
+@media(max-width: 768px) {
+    .titlesp {
+        width: 80vw;
+    }
     .logosContainer {
         display: block;
         justify-content: space-between;
-        background-color: rgb(25,25,25);
+        background-color: rgb(25, 25, 25);
         padding: 1em 0;
         text-align: center;
         width: 100%;
@@ -770,7 +788,6 @@ body h1{
         padding: 5px 5px;
         margin: 8px;
     }
-
     .blackNav {
         position: static;
         left: 0;
@@ -779,7 +796,6 @@ body h1{
         transform: none;
         text-align: center;
     }
-
     .blackNav img {
         margin-left: 0;
         height: 3.5em;
@@ -787,47 +803,39 @@ body h1{
         left: 0;
         top: 20%;
     }
-    
     /* NavBar */
-    #nav ul{
+    #nav ul {
         /* background-color: tomato; */
         display: flex;
         justify-content: space-between;
         float: none;
-        
     }
-
-    #nav li{
+    #nav li {
         float: right;
     }
-
-    #nav{
+    #nav {
         height: auto;
     }
-
-    #nav li a{
+    #nav li a {
         font-size: 12px;
         padding: 15px 5px;
     }
-
-
     /* Top Container */
-    .topContainer{
-        height: min-content;  
+    .topContainer {
+        height: min-content;
     }
-    .topContainer img{
+    .topContainer img {
         height: 100%;
         width: 100%;
     }
-    .topContainer h1{
+    .topContainer h1 {
         /* font-size: 10vw; */
         line-height: 0
     }
-    .topContainer .content p{
+    .topContainer .content p {
         font-size: 3.6vw;
     }
-
-    .whiteCircle{
+    .whiteCircle {
         /* height: 25%;
         width: 32%;
         top: 25%;
@@ -835,198 +843,170 @@ body h1{
          */
         display: none;
     }
-    .whiteCircle div h1{
+    .whiteCircle div h1 {
         font-size: 11vw;
         padding-bottom: 9px;
     }
-    
-    .blackTag{
+    .blackTag {
         /* width: 57%;
         height: 9%;
         top: 60%; */
         display: none;
     }
-    .blackTag img{
+    .blackTag img {
         height: 60%;
         width: 70%;
     }
-    #excel{
+    #excel {
         height: 65%;
         width: 80%;
     }
-    #ibeto{
+    #ibeto {
         height: 70%;
         width: 67%;
     }
-
-    .content{
+    .content {
         width: 100%;
         position: static;
     }
-    .content h1{
+    .content h1 {
         font-size: 1.7em;
-        
     }
-    .content p{
+    .content p {
         font-size: 2.8vw;
     }
-    .content button{
+    .content button {
         font-size: 2.5vw;
         height: 20%;
         width: 60%;
         margin-top: 2em;
     }
-
     /* Mid Container */
-    .midContainer{
+    .midContainer {
         width: 100%;
         height: auto;
         display: grid;
         padding: 2em 2em 4em 2em;
         grid-template-rows: auto;
         grid-template-columns: auto auto auto auto;
-        grid-template-areas:
-            "box1"
-            "box2"
-            "box3";
+        grid-template-areas: "box1" "box2" "box3";
         margin: 0;
     }
-
-    .midContent{
+    .midContent {
         padding: 0;
         grid-area: box1;
         font-size: 3.8vw;
         display: grid;
     }
-
-    .midContent h1{
-        
+    .midContent h1 {
         font-size: 8vw;
         font-weight: bold;
     }
-
-    .midContent p{
+    .midContent p {
         align-self: center;
         justify-self: center;
         line-height: 150%;
         font-size: 3.8vw;
     }
-
-    .midImage{
+    .midImage {
         grid-area: box2;
         grid-template-rows: auto auto;
         grid-template-columns: auto;
-        grid-template-areas: 
-            "pic txt";
+        grid-template-areas: "pic txt";
         margin-top: 2em;
         margin-bottom: 2em;
         justify-content: left;
     }
-    #midImagecontent{
+    #midImagecontent {
         position: relative;
-        float:left;
+        float: left;
         font-size: 4vw;
-        text-align: left; 
-        grid-area: txt;  
-
+        text-align: left;
+        grid-area: txt;
         margin-right: auto;
     }
-    #midImagecontentI{
-        
+    #midImagecontentI {
         position: relative;
-        float:left;
-        grid-area: pic; 
+        float: left;
+        grid-area: pic;
         font-size: 12vw;
         color: #F16A3A;
-        vertical-align: middle; 
+        vertical-align: middle;
         margin: 0;
         margin-left: 12vw;
         margin-right: 4vw;
     }
-    #imageline2{
+    #imageline2 {
         font-size: 6vw;
         font-weight: 500;
     }
-    .midAddress{
+    .midAddress {
         grid-area: box3;
         grid-template-rows: auto auto;
         grid-template-columns: auto;
-        grid-template-areas: 
-            "pic txt";
-        justify-content: left;  
+        grid-template-areas: "pic txt";
+        justify-content: left;
     }
-    #midAddresscontentI{
+    #midAddresscontentI {
         position: relative;
-        float:left;
+        float: left;
         /* padding: 0.1em; */
-        grid-area: pic; 
+        grid-area: pic;
         font-size: 12vw;
         color: #F16A3A;
-        vertical-align: middle; 
+        vertical-align: middle;
         margin: 0;
         margin-left: 12vw;
         margin-right: 6vw;
-        
     }
-    
-    #midAddresscontent{
+    #midAddresscontent {
         position: relative;
-        float:left;
+        float: left;
         font-size: 4vw;
-        text-align: left; 
-        grid-area: txt;  
-
+        text-align: left;
+        grid-area: txt;
         margin-right: auto;
         line-height: normal;
     }
-
-
-
     /* Details Div */
-    .details{
+    .details {
         padding: 2em 2em 4em 2em;
     }
-    .details li{
+    .details li {
         font-size: 3.8vw;
     }
-    .details h1{
+    .details h1 {
         font-size: 8vw;
         font-weight: bold;
         padding-bottom: 2vw;
     }
-    .ltext{
+    .ltext {
         font-size: 4vw;
         color: white;
     }
-    .ltext2{
+    .ltext2 {
         font-size: 3.6vw;
         color: white;
         margin-right: auto;
         margin-left: auto;
-
     }
-    .detailImage{
+    .detailImage {
         /* left: -1em; */
         display: none;
     }
-
-
     /* Bottom Div */
-    .bottomDiv{
+    .bottomDiv {
         margin-top: 2em;
         grid-template-rows: auto auto auto;
         grid-template-columns: auto;
-        grid-template-areas: 
-            "head"
-            "image"
-            "content";
+        grid-template-areas: "head" "image" "content";
     }
-    .bottomHead h1{
+    .bottomHead h1 {
         font-size: 8vw;
         font-weight: bold;
         padding-bottom: 4vw;
     }
-    .bottomImage{
+    .bottomImage {
         margin-top: 2em;
         padding: 0 2em;
         /* background-color: green; */
@@ -1036,69 +1016,65 @@ body h1{
         padding: 0;
         /* background-color: #333; */
     }
-    .bottomImage div img{
+    .bottomImage div img {
         width: 65vw;
     }
-    .bottomContent{
+    .bottomContent {
         height: auto;
         padding-top: 3em;
-        padding-bottom: 6em;   
+        padding-bottom: 6em;
         /* background-color: tomato; */
     }
-    .bottomContent div img{
+    .bottomContent div img {
         width: 50vw;
         height: 20vh
     }
-
-
     /* PrizeDiv */
-    .prizeDiv{
+    .prizeDiv {
         margin-top: -3em;
         height: 10vh;
         /* grid-template-rows: auto auto auto; */
     }
-    .prizeHead{
+    .prizeHead {
         margin-bottom: 7em;
     }
-    .prizeHead h1{
+    .prizeHead h1 {
         font-size: 9vw;
     }
-
     .prizeDiv .trophy {
         /* display: none; */
         position: static;
     }
-    .prizeDiv .firstBox, .prizeDiv .secondBox, .prizeDiv .thirdBox {
+    .prizeDiv .firstBox,
+    .prizeDiv .secondBox,
+    .prizeDiv .thirdBox {
         padding: 1.3em 0;
         height: auto;
     }
-    .prizeDiv .firstBox div, .prizeDiv .secondBox div, .prizeDiv .thirdBox div {
+    .prizeDiv .firstBox div,
+    .prizeDiv .secondBox div,
+    .prizeDiv .thirdBox div {
         margin: 0;
         margin-top: 1em;
     }
-    .contactDiv h1{
+    .contactDiv h1 {
         font-size: 8vw;
     }
-
     .contactDiv .person {
         width: 100%;
         margin: 1.4em 1.6em;
         text-align: left;
         vertical-align: middle;
     }
-    .contactDiv .person .text{
-        
+    .contactDiv .person .text {
         padding: 0%;
         margin: 0%;
         margin-left: 1.2em;
         margin-bottom: 0.8em;
         display: inline-block;
-        font-size: 3.5vw;   
+        font-size: 3.5vw;
     }
-
-    
-
-    .contactDiv .person .photo{
+    .contactDiv .person .photo {
         display: inline-block;
         /* float: left; */
         width: 30%;
@@ -1107,23 +1083,19 @@ body h1{
         border-radius: 50%;
         margin: 0%;
     }
-    .contactDiv h1{
+    .contactDiv h1 {
         margin-top: 1em;
         margin-bottom: 0.5em;
     }
-
-
     /* Prize Details */
-    .prizeDetails li{
+    .prizeDetails li {
         font-size: 1.2em;
     }
-
-
     /* Footer */
-    .footerDiv{
+    .footerDiv {
         height: 30vh;
     }
-    .logo img{
+    .logo img {
         display: none;
     }
     .logo div {
@@ -1132,26 +1104,25 @@ body h1{
     .logo div span {
         display: block;
     }
-    .logo div a{
+    .logo div a {
         font-size: 1.2em;
         padding: 0 8px;
     }
-    .footerIbeto img{
+    .footerIbeto img {
         height: 3em;
     }
-    .footerIbeto div{
+    .footerIbeto div {
         font-size: 8px;
     }
     .footerExcel {
         margin: 0 1em;
     }
-    .footerExcel img{
+    .footerExcel img {
         height: 3em;
     }
-    .footerExcel div{
+    .footerExcel div {
         font-size: 8px;
     }
-
 }
 
 .other-sponsors {
@@ -1170,9 +1141,11 @@ body h1{
 .other-sponsors.sponsor-ksum {
     grid-area: logo1;
 }
+
 .other-sponsors.sponsor-tnie {
     grid-area: logo2;
 }
+
 .other-sponsors.sponsor-ewnture {
     grid-area: logo3;
 }
